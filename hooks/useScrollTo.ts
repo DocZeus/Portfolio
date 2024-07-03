@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { navigationHeight } from "../utils/theme-config";
 
-interface ScrollToElProps {
+export interface ScrollToElProps {
     hash: string;
 }
 

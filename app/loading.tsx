@@ -1,10 +1,16 @@
-import React from "react";
-import { Loader } from "../components";
+import React from 'react';
+import { Loader } from '../components';
 
-export default function Loading() {
+interface LoadingProps {
+	textClassNames?: string;
+}
+
+const Loading: React.FC<LoadingProps> = ({ textClassNames }: LoadingProps) => {
 	return (
 		<div className="flex-center">
-			<Loader textClassNames="text-2xl text-center" />
+			<Loader textClassNames={textClassNames} />
 		</div>
 	);
-}
+};
+
+export default Loading;
